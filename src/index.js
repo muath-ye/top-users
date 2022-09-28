@@ -1,6 +1,6 @@
 /*!
- * top-github-users-monitor 2.0.0
- * https://github.com/muath-ye/top-github-users-monitor
+ * top-users-monitor 2.0.0
+ * https://github.com/muath-ye/top-users-monitor
  * (c) 2021 muath-ye
  * Released under the MIT License
  */
@@ -23,7 +23,7 @@ const formatMarkdown = require('./helper/markdown/format_markdown');
 const OutputMarkdownModel = require('./model/markdown/OutputMarkdownModel');
 let Index = function() {
     // const AUTH_KEY = "";
-    // const GITHUB_USERNAME_AND_REPOSITORY = 'muath-ye/top-github-users';
+    // const GITHUB_USERNAME_AND_REPOSITORY = 'muath-ye/top-users';
     const AUTH_KEY = process.env.CUSTOM_TOKEN;
     const GITHUB_USERNAME_AND_REPOSITORY = process.env.GITHUB_REPOSITORY;
     const MAXIMUM_ERROR_ITERATIONS = 4;

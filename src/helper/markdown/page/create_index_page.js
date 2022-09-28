@@ -42,15 +42,15 @@ let createIndexPage = (function() {
     }
     let create = function(githubUsernameAndRepository, readConfigResponseModel) {
         let markdown = headerComponent.create();
-        markdown = markdown + `<a href="https://muath-ye.github.io/top-github-users/index.html">\n`;
-        markdown = markdown + `\t<img align="right" width="400" src="https://github.com/muath-ye/top-github-users-monitor/raw/master/public/images/banner/top-github-users-map.png" alt="top-github-users-by-country">\n`;
+        markdown = markdown + `<a href="https://muath-ye.github.io/top-users/index.html">\n`;
+        markdown = markdown + `\t<img align="right" width="400" src="https://github.com/muath-ye/top-users-monitor/raw/master/public/images/banner/top-users-map.png" alt="top-users-by-country">\n`;
         markdown = markdown + `</a>\n\n`;
         markdown = markdown + `List of most active GitHub users based on \`public contributions\` \`private contributions\` and \`number of followers\`  by country or state. `;
         markdown = markdown + `The list updated \`${formatMarkdown.getDate()}\`.\n\n`;
         markdown = markdown + `This repository contains users \`${readConfigResponseModel.locations.length} countries\` and \`${formatMarkdown.getNumberOfCities(readConfigResponseModel)} cities\`. \n`;
         markdown = markdown + `To get into the list you need to have minimum number of followers that varies in each country. `;
         markdown = markdown + `The list can be found in [config.json](https://github.com/${githubUsernameAndRepository}/blob/main/config.json).\n\n`;
-        markdown = markdown + `Contribute to GitHub action [muath-ye/top-github-users-action](https://github.com/muath-ye/top-github-users-action). `;
+        markdown = markdown + `Contribute to GitHub action [muath-ye/top-users-action](https://github.com/muath-ye/top-users-action). `;
         markdown = markdown + `The project maintained by [muath-ye](https://github.com/muath-ye). `
         markdown = markdown + `Don't forget to follow him on [GitHub](https://github.com/muath-ye), [Twitter](https://twitter.com/muath-ye), and [Medium](https://muath-ye.medium.com/).\n\n`;
         markdown = markdown + starComponent.create();
